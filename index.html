@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Laomedeia</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <main id="main">
+    <section class="kv">
+      <h1 class="logo"><img src="logo.svg" alt="Laomedeia"></h1>
+    </section>
+
+    <section class="profile">
+      <h2 class="sec_title">- Profile -</h2>
+      <figure class="profile_img"><img src="profile.png" alt=""></figure>
+      <dl class="profile_dl">
+        <dt class="profile_dt">Name</dt>
+        <dd class="profile_dd">Utsuno Taishiro</dd>
+      </dl>
+      <dl class="profile_dl">
+        <dt class="profile_dt">Live</dt>
+        <dd class="profile_dd">Tokyo</dd>
+      </dl>
+      <dl class="profile_dl">
+        <dt class="profile_dt">Skill</dt>
+        <dd class="profile_dd">HTML, CSS, SCSS, JavaScript(jQuery), PHP(WordPress),<br>Adobe Photoshop, <br class="sp_only">Adobe Illustrator, <br class="sp_only">Adobe Premiere Pro</dd>
+      </dl>
+      <dl class="profile_dl">
+        <dt class="profile_dt">Contact</dt>
+        <dd class="profile_dd">laomedeia12@gmail.com</dd>
+      </dl>
+    </section>
+
+    <section class="works">
+      <h2 class="sec_title">- Works -</h2>
+      <ul class="works_list">
+        <li class="work_item">
+          <figure class="work_img"><img src="item_01.jpeg" alt=""></figure>
+          <div class="work_info">
+            <h3 class="work_name"><a href="https://www.e-blooming.com/embody/toei-amh-movie/" target="_blank">東栄住宅な人々でショート動画14本つくっちゃいました！</a></h3>
+            <ul class="work_skill">
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JavaScript(jQuery)</li>
+              <li>Photoshop</li>
+            </ul>
+            <p class="work_text">株式会社東栄住宅様のショート動画紹介のランディングページのコーディングを担当しました。</p>
+          </div>
+        </li>
+        <li class="work_item">
+          <figure class="work_img"><img src="item_02.jpeg" alt=""></figure>
+          <div class="work_info">
+            <h3 class="work_name"><a href="https://starbucks-rtd.jp/" target="_blank">スターバックス® READY TO DRINK</a></h3>
+            <ul class="work_skill">
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JavaScript(jQuery)</li>
+              <li>Photoshop</li>
+            </ul>
+            <p class="work_text">スターバックス® READY TO DRINKの商品ページのコーディングを担当しました。</p>
+          </div>
+        </li>
+        <li class="work_item">
+          <figure class="work_img"><img src="item_03.jpeg" alt=""></figure>
+          <div class="work_info">
+            <h3 class="work_name"><a href="https://web-camp.io/" target="_blank">DMM WEBCAMP</a></h3>
+            <ul class="work_skill">
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JavaScript(jQuery)</li>
+              <li>Figma</li>
+            </ul>
+            <p class="work_text">DMM WEBCAMPの各コース紹介ページのコーディングを担当しました。</p>
+          </div>
+        </li>
+        <li class="work_item">
+          <figure class="work_img"><img src="item_04.jpeg" alt=""></figure>
+          <div class="work_info">
+            <h3 class="work_name"><a href="https://www.t2-sol.co.jp/" target="_blank">Tスクエアソリューションズ株式会社</a></h3>
+            <ul class="work_skill">
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JavaScript(jQuery)</li>
+              <li>WordPress</li>
+              <li>Photoshop</li>
+            </ul>
+            <p class="work_text">Tスクエアソリューションズ株式会社様のコーポレートサイトのコーディングを担当しました。</p>
+          </div>
+        </li>
+        <li class="work_item">
+          <figure class="work_img"><img src="item_05.jpeg" alt=""></figure>
+          <div class="work_info">
+            <h3 class="work_name"><a href="https://www.princehotels.co.jp/shinagawa/sports/" target="_blank">高輪テニスセンター / 高輪ゴルフセンター / スポーツジム高輪</a></h3>
+            <ul class="work_skill">
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JavaScript(jQuery)</li>
+              <li>Photoshop</li>
+            </ul>
+            <p class="work_text">品川プリンスホテル様のスポーツ複合施設のサイトのコーディングを担当しました。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer id="footer">
+    <p class="copyright">&copy; 2022 laomedeia12</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      $(window).on("load", function(){
+        $("body").addClass("loaded");
+      });
+
+      // hover
+      $("a, button").on("mouseenter touchstart", function () {
+        $(this).addClass("hover");
+      });
+      $("a, button").on("mouseleave touchend", function () {
+        $(this).removeClass("hover");
+      });
+    });
+  </script>
+</body>
+</html>
