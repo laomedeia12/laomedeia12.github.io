@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
   
 </head>
-<body>
+<body id="body">
   <main id="main">
     <section class="kv">
       <h1 class="logo"><img src="logo.svg" alt="Laomedeia"></h1>
@@ -116,7 +116,7 @@
   <script>
     $(function(){
       $(window).on("load", function(){
-        $("body").addClass("loaded");
+        $('[id="body"]').addClass("loaded");
       });
 
       // hover

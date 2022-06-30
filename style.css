@@ -59,11 +59,14 @@ html {
 body {
   line-height: 1.75;
   background-color: #f3f3f3;
+}
+body.loaded [id=main] {
+  opacity: 1;
+}
+
+[id=main] {
   opacity: 0;
   transition: opacity 0.4s ease;
-}
-body.loaded {
-  opacity: 1;
 }
 
 ul,
